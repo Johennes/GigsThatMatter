@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Gigs that Matter</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+    <script type="text/javascript" src="js/jquery.lastfm.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <h1>Gigs that Matter</h1>
+        <h3>Find upcoming gigs of your favorite artists on Last.fm</h3>
+      </div>
+      <div id="content">
+        <ul id="menu">
+          <li>
+            <div class="expander">
+              <a href="">About</a>
+              <a class="expander_icon" href=""></a>
+            </div>
+            <div class="expandable">
+              <p>Welcome to <i>Gigs that Matter</i>.</p>
+              <p>The purpose of this webpage is to provide quick access to upcoming concerts of your favorite
+              bands and artists on <a href="http://www.last.fm">Last.fm</a>.</p>
+              <p>All you need to do is enter your Last.fm username below and hit the search button. There is no
+              login required and all of the remaining settings are optional.</p>
+              <p>The form beneath is initialized with my own Last.fm username <i>JogoMarbach</i> so you can give it a try
+              right away.</p>
+            </div>
+          </li>
+          <div class="separator"></div>
+          <li>
+            <div class="expander">
+              <a href="">Credits</a>
+              <a class="expander_icon" href=""></a>
+            </div>
+            <div class="expandable">
+              <p>The idea for building this website must be credited to my lovely girlfriend. Besides, I've made use of the
+              following APIs and libraries:</p>
+              <ul>
+                <li><a href="http://www.last.fm/api">Last.fm API</a></li>
+                <li><a href="https://developers.google.com/maps/">Google Maps API</a></li>
+                <li><a href="http://jquery.com/">jQuery</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <form id="settings">
+          <ul>
+            <li>
+              <label for="username">Last.fm Username</label>
+              <div class="input_wrapper">
+                <input type="text" name="username" id="username" value="JogoMarbach" placeholder="Enter a Last.fm username" required>
+              </div>
+            </li>
+            <div class="separator"></div>
+            <li>
+              <label for="location">Your Location</label>
+              <div class="input_wrapper">
+                <input type="text" name="location" id="location">
+              </div>
+            </li>
+            <div class="separator"></div>
+            <li>
+              <label for="max_artists">Max. Number of Artists</label>
+              <div class="input_wrapper">
+                <div id="max_artists"></div>
+                <div id="max_artists_value"></div>
+              </div>
+            </li>
+            <div class="separator"></div>
+            <li>
+              <div id="submit_button_wrapper">
+                <button type="submit">Search</button>
+              </div>
+            </li>
+          </ul>
+        </form>
+        <div id="list_wrapper">
+          <div id="artist_list_wrapper">
+            <div id="artist_list_header">Artists</div>
+            <ul id="artist_list">
+              <li class="artist_list_placeholder">
+                <div>Wait for artists to be loaded</div>
+              </li>
+            </ul>
+          </div>
+          <div id="list_separator"></div>
+          <div id="event_list_wrapper">
+            <div id="event_list_header">Events</div>
+            <ul id="event_list">
+              <li class="event_list_placeholder">
+                <div>Select an artist from the list</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="map_wrapper"></div>
+      </div>
+      <div id="footer">
+        &copy; 2014 Johannes Marbach
+      </div>
+    </div>
+  </body>
+</html>
