@@ -11,6 +11,8 @@ concerts of your favorite bands and artists on
 [Last.fm](http://www.last.fm). The event locations are displayed in a
 list as well as on an interactive map.
 
+![Gigs That Matter][2014-07-25]
+
 # Dependencies
 
 The application heavily relies on the following APIs and libraries:
