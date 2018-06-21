@@ -12,6 +12,10 @@ The purpose of this web app is to provide quick access to upcoming
 concerts of your favorite bands and artists on [Last.fm](http://www.last.fm).
 The event locations are displayed in a list as well as on an interactive map.
 
+### Usage
+
+Simply load `src/index.html` in your web browser.
+
 ### Dependencies
 
 The application heavily relies on the following APIs and libraries:
