@@ -3,8 +3,8 @@
   'description': 'Finds nearby upcoming gigs of your favorite artists on Last.fm',
   'launch_path': '/src/index.html',
   'icons': {
-    '128': '/images/icon-128.png',
-    '512': '/images/icon-512.png'
+    '128': '/icon/icon-128.png',
+    '512': '/icon/icon-512.png'
   },
   'developer': {
     'name': 'Johannes Marbach'
