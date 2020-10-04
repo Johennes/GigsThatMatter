@@ -1,8 +1,6 @@
 GigsThatMatter
 ==============
 
-*Mirrors: [GitHub] ~ [GitLab]*
-
 Web application that visualizes upcoming events of your top artists on
 Last.fm
 
@@ -28,6 +26,3 @@ The application heavily relies on the following APIs and libraries:
 ### Screenshots
 
 ![Main interface](screenshots/main-interface.png)
-
-[GitHub]: https://github.com/Johennes/GigsThatMatter
-[GitLab]: https://gitlab.com/cherrypicker/GigsThatMatter
